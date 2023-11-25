@@ -47,7 +47,7 @@ setting_bg()
 # Database Connection._.
 Mydb = sql.connect(host = "localhost",
                    user = "root",
-                   password = "Din@9600",
+                   password = "password",
                    database = "BussinessCard")
 mycursor = Mydb.cursor(buffered=True)
 
@@ -358,8 +358,6 @@ if selected=='Database':
 if selected == 'Profile':
     col1,col2 = st.columns([3,3],gap="medium")
     with col1:
-        st.write(" ")
-        st.write(" ")
         st.subheader(":white[BizCardX Extracting business card Data ]",divider='rainbow')
         st.markdown("""
                     <div style="text-align: justify; font-size: 30px;">
@@ -368,12 +366,6 @@ if selected == 'Profile':
                             The main purpose of Bizcard is to automate the process of extracting key details from business card images, such as the name, designation, company, contact information, and other relevant data. By leveraging the power of OCR (Optical Character Recognition) provided by EasyOCR, Bizcard is able to extract text from the images.
                         </p></div>""", unsafe_allow_html=True)
                 # Create vertical space using empty containers
-        for _ in range(6):
-            st.write(" ")
-        # Create additional vertical space
-        for _ in range(4):
-            st.write(" ")
-
         st.markdown("### :gray[Name:  ] :blue[Dinesh Dhamodharan]")
         st.markdown("### :violet[My Project GitHub link] ⬇️")
         github_url = "https://github.com/DineshDhamodharan24/BizCardX-Extracting-Business-Card-Data-with-OCR"
@@ -383,12 +375,6 @@ if selected == 'Profile':
         st.markdown(button_html, unsafe_allow_html=True)
     
     with col2:
-        # Create vertical space using empty containers
-        for _ in range(21):
-            st.write(" ")
-        # Create additional vertical space
-        for _ in range(10):
-            st.write(" ")
         st.markdown("### :gray[Email: ] dineshdin9600@gmail.com")
         st.markdown("### :violet[My LinkedIn] ⬇️")
         linkedin_url = "https://www.linkedin.com/in/dinesh-dhamodharan-2bbb9722b/"
